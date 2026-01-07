@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-primary: #1d2b64;
+  --color-secondary: #f8cdda;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-poppins: "Poppins", sans-serif;
+
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +28,38 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* btns */
+.btn-primary {
+  @apply bg-size-[300%_auto] duration-1000 ease-in-out bg-linear-to-r from-[#1d2b64] via-[#f8cdda] to-[#1d2b64] px-5 py-2   rounded-full inline-block hover:bg-position-[100%] cursor-pointer;
+}
+
+.btn-secondary {
+  @apply bg-[#6f7280] px-5 py-2 rounded-full inline-block  bg-size-[300%_auto] duration-1000 ease-in-out cursor-pointer;
+}
+
+/* gradient color */
+.linear-gradient {
+  @apply bg-linear-to-r from-[#1d2b64] via-[#f8cdda];
+}
+
+/* h1 */
+.title {
+  @apply inline-block 
+         text-5xl 
+         font-bold 
+         uppercase
+         bg-linear-to-r
+         from-[#1d2b64]
+         via-[#f8cdda]
+         to-[#1d2b64]
+        bg-size-[200%_auto]
+         bg-clip-text
+         text-transparent;
+}
+
+.flex-wrap {
+  @apply flex justify-between items-center gap-5;
 }
