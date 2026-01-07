@@ -3,7 +3,7 @@ import Title from "@/components/Title/Title";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center py-10 border px-5 m-5">
+    <section className="flex flex-col-reverse md:flex-row items-center py-10 border px-5 mt-10 bg-amber-950 ">
       <div className="space-y-3">
         <p>Font-End Developer</p>
         <Title>Aktar Ahmed</Title>

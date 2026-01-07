@@ -61,6 +61,6 @@ body {
          text-transparent;
 }
 
-.flex-wrap {
+/* .flex-group {
   @apply flex justify-between items-center gap-5;
-}
+} */
