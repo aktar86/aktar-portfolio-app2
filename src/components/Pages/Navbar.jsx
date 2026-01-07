@@ -12,7 +12,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <header className="flex-wrap">
+    <header className="flex-wrap py-5 border rounded-full px-5">
       <Logo />
 
       <div className="flex-wrap">
