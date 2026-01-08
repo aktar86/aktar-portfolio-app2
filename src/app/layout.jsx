@@ -22,12 +22,12 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body
-        className={`overflow-x-hidden bg-amber-300 ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950 `}
       >
-        <Navbar />
-
-        <div className="max-w-7xl mx-auto border overflow-x-hidden">
-          <main className="overflow-hidden">{children}</main>
+        {/* Main content */}
+        <div className="max-w-7xl mx-auto border">
+          <Navbar />
+          <main>{children}</main>
           <Footer />
         </div>
       </body>
